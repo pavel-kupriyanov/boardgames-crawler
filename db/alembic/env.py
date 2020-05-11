@@ -5,11 +5,10 @@ from sqlalchemy import pool
 
 from alembic import context
 
-import settings
-from db.schema import metadata
+from db.schema import metadata, db_url
 
 config = context.config
-config.set_main_option('sqlalchemy.url', settings.DB_URL)
+config.set_main_option('sqlalchemy.url', db_url)
 
 fileConfig(config.config_file_name)
 
