@@ -2,7 +2,7 @@ import asyncio
 from argparse import ArgumentParser
 
 import settings
-from crawler.crawler_ import start_crawler
+from crawler.main import start_crawler
 
 parser = ArgumentParser()
 
